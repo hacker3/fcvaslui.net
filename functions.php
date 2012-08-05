@@ -79,7 +79,12 @@ function zenframework_load_styles() {
 }
 
 function zenframework_load_scripts() {
-	
+	// regs
+	wp_register_script('easy-slides',  get_stylesheet_directory_uri() . '/js/easySlider1.7.js', array( 'jquery' ));
+
+
+	// loads
+	wp_enqueue_script('easy-slides');
 }
 
 add_filter('widget_text', 'do_shortcode');
