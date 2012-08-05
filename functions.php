@@ -28,10 +28,8 @@ if ( ! function_exists( 'zenframework_theme_setup' ) ):
 			add_action( 'widgets_init', 'zenframework_register_sidebars' );
 		/* Load Javascript and CSS files on the 'wp_enqueue_scripts' action hook. */
 			add_action( 'wp_enqueue_scripts', 'zenframework_load_styles' );
-			//add_action( 'wp_enqueue_scripts', 'zenframework_load_scripts' );
+			add_action( 'wp_enqueue_scripts', 'zenframework_load_scripts' );
 		/* Print Javascript and CSS files on the 'wp_print_styles' action hook. */
-			add_action( 'wp_print_styles', 'zenframework_print_styles' );
-			//add_action( 'wp_print_scripts', 'zenframework_print_scripts' );
 		/* Add custom filters. */
 			//add_filter( 'the_content', '' );
 	}
@@ -75,12 +73,13 @@ function zenframework_load_styles() {
 		null, //no dependencies
 		'1.0.0' //version
 	);
-}
-
-function zenframework_print_styles() {
 	if ( !is_admin() ):
 		wp_enqueue_style('default');
 	endif; //!is_admin
+}
+
+function zenframework_load_scripts() {
+	
 }
 
 add_filter('widget_text', 'do_shortcode');
