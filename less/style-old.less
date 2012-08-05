@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6 {line-height:1;}
+
+h1 	{ font-size:1.75em }
+h2 	{ font-size:1.5em }
+h3 	{ font-size:1.4em }
+h4	{ font-size:1.3em }
+h5	{ font-size:1.2em }
+h6	{ font-size:1.1em }
+
+li { list-style:none; }
+
+.container {
+	position:relative;
+	width:940px;
+}
+
+@wide:		@width - @cols-sp;
+@half: 		@width/2 - @cols-sp;
+@third: 	@width/3 - @cols-sp;
+@third2:	2*@width/3 - @cols-sp;
+@quarter: 	@width/4 - @cols-sp;
+@quarter3: 	3*@width/4 - @cols-sp;
+@fifth: 	@width/5 - @cols-sp;
+@sixth:		@width/6 - @cols-sp;
+
+@col:		@width/@cols-no - @cols-sp;
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16,
+.wide, .half, .third, .third2, .quarter, .quarter3, .fifth, .sixth {
+	background:#FFFFFF;
+	border-width:@border;
+	border-color:#CCCCCC;
+	border-style:solid;
+	display:inline-block;
+	float:left;
+	margin-left:	@gutter/2;
+	margin-right:	@gutter/2;
+}
+
+.inline {
+	display:inline-block;
+	float:left;
+}
+
+/* Post something */
+
+.post {
+	padding:1.5em;
+}

@@ -1,0 +1,16 @@
+.accent {
+
+	&.darker {
+		color: $default-darker-color;
+	}
+
+	&.color {
+		color: $default-accent-color;
+	}
+
+	&.font {
+		font-family: $default-accent-font-family;
+		font-weight: $default-accent-font-weight;
+	}
+
+}

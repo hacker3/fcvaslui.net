@@ -1,0 +1,425 @@
+/**
+* Gridpak Beta SCSS 
+*
+* Generator - http://gridpak.com/
+* Created by @erskinedesign
+*/
+/* Reusable column setup */
+.col {
+  border: 0 solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important; }
+
+.container {
+  margin: 40px 10px 0 10px; }
+
+/* 1. 1 Column Grid 0px - 319px 
+----------------------------------------------------------------------------- 
+
+Span 1:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (max-width: 319px) {
+  .col {
+    border-left-width: 0;
+    padding: 0 10px; }
+
+  /* --- Gridpak variables ---*/
+  .span_1 {
+    margin-left: 0;
+    width: 100%; } }
+/* 2. 6 Column Grid 320px - 479px 
+----------------------------------------------------------------------------- 
+
+Span 1:    16.6666666667%
+Span 2:    33.3333333333%
+Span 3:    50.0%
+Span 4:    66.6666666667%
+Span 5:    83.3333333333%
+Span 6:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .col {
+    border-left-width: 0;
+    padding: 0 2px; }
+
+  /* --- Gridpak variables ---*/
+  .span_1 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 16.667%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_2 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 33.333%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_3 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 50%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_4 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 66.667%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_5 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 83.333%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_6 {
+    margin-left: 0;
+    width: 100%; } }
+/* 3. 8 Column Grid 480px - 779px 
+----------------------------------------------------------------------------- 
+
+Span 1:    12.5%
+Span 2:    25.0%
+Span 3:    37.5%
+Span 4:    50.0%
+Span 5:    62.5%
+Span 6:    75.0%
+Span 7:    87.5%
+Span 8:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 480px) and (max-width: 779px) {
+  .col {
+    border-left-width: 0px;
+    padding: 0 2px; }
+
+  /* --- Gridpak variables ---*/
+  .span_1 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 12.5%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_2 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 25%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_3 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 37.5%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_4 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 50%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_5 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 62.5%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_6 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 75%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_7 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 87.5%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_8 {
+    margin-left: 0;
+    width: 100%; } }
+/* 4. 12 Column Grid 780px - Infinity 
+----------------------------------------------------------------------------- 
+
+Span 1:    8.33333333333%
+Span 2:    16.6666666667%
+Span 3:    25.0%
+Span 4:    33.3333333333%
+Span 5:    41.6666666667%
+Span 6:    50.0%
+Span 7:    58.3333333333%
+Span 8:    66.6666666667%
+Span 9:    75.0%
+Span 10:    83.3333333333%
+Span 11:    91.6666666667%
+Span 12:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 780px) {
+  .col {
+    border-left-width: 0;
+    padding: 0 2px; }
+
+  /* --- Gridpak variables ---*/
+  .span_1 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 8.333%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_2 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 16.667%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_3 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 25%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_4, #sidebar {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 33.333%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_5 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 41.667%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_6 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 50%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_7 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 58.333%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_8, #main {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 66.667%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_9 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 75%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_10 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 83.333%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_11 {
+    border: 0 solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 91.667%;
+    border-left-width: 0;
+    padding: 0 2px;
+    margin-left: 0; }
+
+  .span_12 {
+    margin-left: 0;
+    width: 100%; } }

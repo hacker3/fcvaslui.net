@@ -1,0 +1,210 @@
+/* Defaults */
+
+@default-width: 		960px;
+@default-column-no: 	12;
+@default-column-margin:	10px;
+@default-column-border:	0;
+
+@content-bg: #FFFFFF;
+
+#content {
+	background:@content-bg;
+}
+
+/* Default Grid */
+
+.grid (@width:@default-width, @column-no:@default-column-no, @column-margin:@default-column-margin, @column-border:@default-column-border) {
+
+	/* Grid Columns */
+
+	.column, .columns {
+		float: left;
+		display: inline;
+		margin: 40px 10px 0px 10px;
+		position: relative;
+	}
+
+	@column-space:	2 * ( @column-margin + @column-border );
+	@column-width:	( @width / @column-no ) - @column-space;
+
+	.columns-width (@columns:1) {
+		width: @column-width + (@columns - 1) * (@column-width + @column-space);
+	}
+
+	.columns-wrapper-width (@columns:1) {
+		width: @columns * (@column-width + @column-space);
+	}
+
+	.one.column					{ .columns-width (1); }
+	.two.columns				{ .columns-width (2); }
+	.three.columns				{ .columns-width (3); }
+	.four.columns				{ .columns-width (4); }
+	.five.columns				{ .columns-width (5); }
+	.six.columns				{ .columns-width (6); }
+	.seven.columns				{ .columns-width (7); }
+	.eight.columns				{ .columns-width (8); }
+	.nine.columns				{ .columns-width (9); }
+	.ten.columns				{ .columns-width (10); }
+	.eleven.columns				{ .columns-width (11); }
+	.twelve.columns				{ .columns-width (12); }
+	.thirteen.columns			{ .columns-width (13); }
+	.fourteen.columns			{ .columns-width (14); }
+	.fifteen.columns			{ .columns-width (15); }
+	.sixteen.columns			{ .columns-width (16); }
+
+	.one.column.wrapper			{ .columns-wrapper-width (1); }
+	.two.columns.wrapper		{ .columns-wrapper-width (2); }
+	.three.columns.wrapper		{ .columns-wrapper-width (3); }
+	.four.columns.wrapper		{ .columns-wrapper-width (4); }
+	.five.columns.wrapper		{ .columns-wrapper-width (5); }
+	.six.columns.wrapper		{ .columns-wrapper-width (6); }
+	.seven.columns.wrapper		{ .columns-wrapper-width (7); }
+	.eight.column.wrapper		{ .columns-wrapper-width (8); }
+	.nine.column.wrapper		{ .columns-wrapper-width (9); }
+	.ten.column.wrapper			{ .columns-wrapper-width (10); }
+	.eleven.column.wrapper		{ .columns-wrapper-width (11); }
+	.twelve.column.wrapper		{ .columns-wrapper-width (12); }
+	.thirteen.columns.wrapper	{ .columns-wrapper-width (13); }
+	.fourteen.columns.wrapper	{ .columns-wrapper-width (14); }
+	.fifteen.columns.wrapper	{ .columns-wrapper-width (15); }
+	.sixteen.columns.wrapper	{ .columns-wrapper-width (16); }
+
+	.column.first, .columns.first	{ margin-left:0 }
+	.column.last, .columns.last		{ margin-right:0 }
+
+	/* Grid Sections */
+
+	.section (@ratio:1/2) {
+		width: @width*@ratio - @column-space;
+		float:left;
+		margin:40px 10px 0 10px;
+	}
+
+	.one-half		{ .section(1/2) }
+	.one-third		{ .section(1/3) }
+	.two-third		{ .section(2/3) }
+	.one-fourth		{ .section(1/4) }
+	.three-fourth	{ .section(3/4) }
+
+	.section.last {margin-right:0;}
+	.section.first {margin-left:0;}
+
+	/* Grid Separator */
+
+	.row {
+		margin-bottom: 20px; 
+	}
+
+	/* Grid Divider */
+
+	.divider {
+		border-bottom: 1px solid #ECECEC;
+		margin-top: 8px;
+		position: relative;
+	}
+
+}
+
+.container {
+
+	.grid();
+
+	position: relative; 
+	width: @default-width;
+	margin: 0 auto; 
+	padding: 0; 
+	padding-left: 10px; 
+	padding-right: 10px;
+}
+
+.zen-float-left {
+	width:660px;
+	float:left;
+}
+
+.zen-right-sidebar {
+	width:280px;
+	float:left;
+}
+
+/* Selection colours */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+/*		Default Layout: 992px. 
+		Leftover space for scrollbars @1024px: 32px */
+
+	body {
+		-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	}
+
+/*	Tablet Layout: 768px.
+	Inherits styles from: Default Layout */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	@width:748px;
+
+	.container {
+		width:@width;
+	}
+
+	.zen-float-left {
+		width:528px;
+	}
+
+	.zen-right-sidebar {
+		width:220px;
+	}
+
+}
+
+
+
+/*	Mobile Layout: 320px.
+	Inherits styles from: Default Layout.	*/
+
+@media only screen and (max-width: 767px) {
+
+	@width:318px;
+
+	.container {
+		width:@width;
+	}
+
+}
+
+
+
+/*	Wide Mobile Layout: 480px.
+	Inherits styles from: Default Layout, Mobile Layout */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	@width:436px;
+
+	.container {
+		width:@width;
+	}
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+	body {
+
+	}
+
+}

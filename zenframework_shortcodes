@@ -1,0 +1,48 @@
+<?php
+
+function wptuts_first_shortcode($atts, $content=null){
+	
+	$post_url = get_permalink($post->ID);
+	$post_title = get_the_title($post->ID);
+	$tweet = '<a href="http://twitter.com/home/?status=Read ' . $post_title . ' at ' . $post_url . '">Share on Twitter</a>';
+	
+	return $tweet;
+}
+
+add_shortcode('twitter', 'wptuts_first_shortcode');
+
+
+
+function wptuts_youtube($atts, $content=null){
+
+	extract(shortcode_atts( array('id' => ''), $atts));
+	
+
+	$return = $content;
+	if($content)
+		$return .= "<br /><br />";
+	
+	$return .= '<iframe width="560" height="349" src="http://www.youtube.com/embed/' . $id . '" frameborder="0" allowfullscreen></iframe>';
+	
+	return $return; 
+
+}
+add_shortcode('youtube', 'wptuts_youtube');
+
+
+
+
+function wptuts_recentpost($atts, $content=null){
+
+	$getpost = get_posts( array('number' => 1) );
+	
+	$getpost = $getpost[0];
+	
+	$return = $getpost->post_title . "<br />" . $getpost->post_excerpt . "&hellip;";
+	
+	$return .= "<br /><a href='" . get_permalink($getpost->ID) . "'><em>read more &rarr;</em></a>";
+	
+	return $return;
+	
+}
+add_shortcode('newestpost', 'wptuts_recentpost');

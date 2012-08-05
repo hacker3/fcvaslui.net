@@ -1,0 +1,42 @@
+@width: 960px;
+
+@cols-no: 12;
+@gutter: 0;
+@border: 0;
+@cols-sp:@gutter + 2*@border;
+
+@content-bg: #FFFFFF;
+
+#content {
+	background:@content-bg;
+}
+
+.container {
+	margin:0 auto;
+	position:relative;
+	width:940px;
+}
+
+h1, h2, h3, h4, h5, h6 {line-height:1;}
+
+h1 	{ font-size:1.75em }
+h2 	{ font-size:1.5em }
+h3 	{ font-size:1.4em }
+h4	{ font-size:1.3em }
+h5	{ font-size:1.2em }
+h6	{ font-size:1.1em }
+
+@wide:		@width - @cols-sp;
+@half: 		@width/2 - @cols-sp;
+@third: 	@width/3 - @cols-sp;
+@third2:	2*@width/3 - @cols-sp;
+@quarter: 	@width/4 - @cols-sp;
+@quarter3: 	3*@width/4 - @cols-sp;
+@fifth: 	@width/5 - @cols-sp;
+@sixth:		@width/6 - @cols-sp;
+
+@col:		@width/@cols-no - @cols-sp;
+
+.post {
+	padding:1.5em;
+}
