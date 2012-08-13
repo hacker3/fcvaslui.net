@@ -733,6 +733,27 @@ article, section {
   display: block;
   height: 300px; }
 
+#slider ul li {
+  padding: 10px;
+  width: 576px;
+  height: 300px;
+  -webkit-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px; }
+
+#controls {
+  float: right; }
+#controls li {
+  padding: 3px 6px;
+  background-color: #769812;
+  float: left;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin: 4px; }
+
 #page #content {
   overflow: hidden;
   *zoom: 1;

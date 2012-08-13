@@ -151,6 +151,30 @@ article, section {
 	}
 }
 
+#slider {
+
+	ul{
+		li {
+			padding: 10px;
+			width: 576px;
+			height: 300px;
+			@include border-radius(50px);
+		}
+	}
+}
+#controls {
+	float:right;
+	li {
+		padding: 3px 6px;
+		background-color: #769812;
+
+		float: left;
+		text-indent: -9999px;
+		cursor: pointer;
+		margin: 4px;
+	}
+}
+
 #page {
 
 	& {

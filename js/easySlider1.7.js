@@ -52,7 +52,7 @@
 			auto:			false,
 			pause:			2000,
 			continuous:		false, 
-			numeric: 		false,
+			numeric: 		true,
 			numericId: 		'controls'
 		}; 
 		

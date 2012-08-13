@@ -1,6 +1,4 @@
 <div id="slider">
-	<div class="row slide">
-		<div id="slider">
 			<ul>
 				<?php
 					// The Query
@@ -20,6 +18,5 @@
 					wp_reset_postdata();
 				?>
 			</ul>
-		</div>
-	</div>
+			
 </div>
